@@ -16,6 +16,37 @@ const THEMES = [
 
 const ORIGIN = site.domain;
 
+// Preview mode builds a second copy into docs/ for GitHub Pages, which serves from a
+// subpath. Production builds keep root-absolute URLs for the real domain.
+const PREVIEW_BASE = process.env.PREVIEW_BASE || '';
+const IS_PREVIEW = !!PREVIEW_BASE;
+
+/**
+ * Rewrites root-absolute URLs onto a base path. Applied to the finished HTML rather than
+ * threaded through every template, because every internal URL is already root-absolute and
+ * every external one is fully qualified — so the two are unambiguous here.
+ * Schema/canonical URLs are absolute (https://marylandtileboss.com/...) and stay untouched,
+ * which is correct: they describe where the real site lives, not the preview.
+ */
+function rebase(html, base) {
+  let out = html
+    .replace(/\b(href|src|action)="\/(?!\/)/g, `$1="${base}/`)
+    .replace(/\b(srcset|imagesrcset)="([^"]*)"/g, (_m, attr, val) =>
+      `${attr}="${val.replace(/(^|,\s*)\//g, `$1${base}/`)}"`
+    )
+    .replace(/url\((['"]?)\/assets\//g, `url($1${base}/assets/`);
+
+  // A public preview must never be indexed alongside the real site.
+  out = out.replace(
+    /<meta name="robots" content="[^"]*">/,
+    '<meta name="robots" content="noindex, nofollow">'
+  );
+  if (!/name="robots"/.test(out)) {
+    out = out.replace('</title>', '</title>\n<meta name="robots" content="noindex, nofollow">');
+  }
+  return out;
+}
+
 /* ---------------------------------------------------------------- page set */
 
 function buildPageList() {
@@ -351,7 +382,8 @@ let written = 0;
 
 for (const theme of THEMES) {
   const mod = await import(`../src/themes/${theme.key}/render.mjs`);
-  const outDir = theme.out;
+  const outDir = IS_PREVIEW ? path.join('docs', theme.out) : theme.out;
+  const base = IS_PREVIEW ? `${PREVIEW_BASE}/${theme.out}` : '';
   const inlineCss = minifyCss(theme.key);
   fs.rmSync(outDir, { recursive: true, force: true });
   fs.mkdirSync(outDir, { recursive: true });
@@ -368,7 +400,7 @@ for (const theme of THEMES) {
       posts,
       inlineCss,
     };
-    const html = mod.render(page, ctx);
+    const html = IS_PREVIEW ? rebase(mod.render(page, ctx), base) : mod.render(page, ctx);
     const dest = page.href === '/' ? path.join(outDir, 'index.html') : path.join(outDir, page.href.slice(1), 'index.html');
     fs.mkdirSync(path.dirname(dest), { recursive: true });
     fs.writeFileSync(dest, html);
@@ -392,13 +424,17 @@ for (const theme of THEMES) {
     sections: [{ type: 'related', heading: 'Try one of these' }],
     faq: [],
   };
+  const notFoundHtml = mod.render(notFound, { url: `${ORIGIN}/404/`, trail: [{ label: 'Home', href: '/' }], schema: '', imageMeta, nav, projects, posts, inlineCss });
   fs.writeFileSync(
     path.join(outDir, '404.html'),
-    mod.render(notFound, { url: `${ORIGIN}/404/`, trail: [{ label: 'Home', href: '/' }], schema: '', imageMeta, nav, projects, posts, inlineCss })
+    IS_PREVIEW ? rebase(notFoundHtml, base) : notFoundHtml
   );
 
   fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap(list));
-  fs.writeFileSync(path.join(outDir, 'robots.txt'), robots());
+  fs.writeFileSync(
+    path.join(outDir, 'robots.txt'),
+    IS_PREVIEW ? '# Client preview build — not for indexing\nUser-agent: *\nDisallow: /\n' : robots()
+  );
   fs.writeFileSync(path.join(outDir, 'llms.txt'), llms(list));
   fs.writeFileSync(path.join(outDir, 'site.webmanifest'), manifest());
   fs.writeFileSync(path.join(outDir, 'favicon.svg'), favicon(theme.key));
@@ -407,7 +443,7 @@ for (const theme of THEMES) {
     `/assets/img/*\n  Cache-Control: public, max-age=31536000, immutable\n/assets/fonts/*\n  Cache-Control: public, max-age=31536000, immutable\n/assets/style.css\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n`
   );
 
-  console.log(`${theme.out}: ${list.length + 1} html files`);
+  console.log(`${outDir}: ${list.length + 1} html files${IS_PREVIEW ? ` (base ${base}, noindex)` : ''}`);
 }
 
 console.log(`\nTotal pages written: ${written + THEMES.length} across ${THEMES.length} designs`);

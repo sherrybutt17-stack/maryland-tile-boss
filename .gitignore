@@ -4,13 +4,15 @@ node_modules/
 # Regenerate with: python3 scripts/crawl.py
 research/raw/
 
-# Build artefacts. Both are copied from assets/optimized and assets/fonts by
-# scripts/build.mjs, so committing them would store the same images three times.
+# Production build artefacts. Copied from assets/optimized and assets/fonts by
+# scripts/build.mjs, so committing them would store the same images twice over.
 # Regenerate both sites in a second with: npm run site
-version-a/assets/img/
-version-a/assets/fonts/
-version-b/assets/img/
-version-b/assets/fonts/
+# Leading slashes matter — these must NOT match the docs/ preview, which is committed
+# in full so GitHub Pages can serve it.
+/version-a/assets/img/
+/version-a/assets/fonts/
+/version-b/assets/img/
+/version-b/assets/fonts/
 
 .DS_Store
 *.log
