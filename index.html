@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maryland Tile Boss — two design directions</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Two design directions for the Maryland Tile Boss website. Client preview.">
+<style>
+  :root {
+    --ink: #16171a; --bone: #f3f0ea; --paper: #fffefb; --grout: #d9d4cb;
+    --gold: #f5a11b; --gold-deep: #8f5703; --slate: #4a5057;
+    --graphite: #1c1e1f; --oyster: #e8e3d9; --brass: #b8894a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.6; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 1100px; margin-inline: auto; padding: clamp(2rem, 6vw, 5rem) clamp(1.2rem, 5vw, 3rem); }
+  header { border-bottom: 2px solid var(--ink); }
+  h1 { font-size: clamp(1.9rem, 1.2rem + 3vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; letter-spacing: -0.02em; }
+  .lede { font-size: clamp(1.05rem, 1rem + 0.4vw, 1.3rem); color: var(--slate); max-width: 62ch; margin: 0; }
+  .note {
+    margin-top: 1.6rem; padding: 0.9rem 1.1rem; background: var(--bone);
+    border-left: 4px solid var(--gold); font-size: 0.95rem; max-width: 62ch;
+  }
+  .grid { display: grid; gap: clamp(1.2rem, 3vw, 2rem); grid-template-columns: 1fr; margin-top: 0; }
+  @media (min-width: 820px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .card { display: flex; flex-direction: column; text-decoration: none; color: inherit; border: 2px solid var(--ink); }
+  .swatch { padding: clamp(1.8rem, 4vw, 3rem) clamp(1.2rem, 3vw, 2rem); }
+  .a .swatch { background: var(--bone); }
+  .b .swatch { background: var(--graphite); color: var(--oyster); }
+  .swatch .name { font-size: clamp(1.4rem, 1.1rem + 1.4vw, 2.1rem); line-height: 1.05; margin: 0 0 0.4rem; letter-spacing: -0.015em; }
+  .a .name { font-weight: 800; text-transform: uppercase; }
+  .b .name { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+  .b .name em { font-style: italic; color: var(--brass); }
+  .swatch p { margin: 0; font-size: 0.98rem; }
+  .a .swatch p { color: var(--slate); }
+  .b .swatch p { color: #9aa0a2; }
+  .chips { display: flex; gap: 0.4rem; margin-top: 1.2rem; }
+  .chip { width: 26px; height: 26px; border: 1px solid rgba(0,0,0,.25); }
+  .b .chip { border-color: rgba(255,255,255,.25); }
+  .meta { padding: 1.1rem clamp(1.2rem, 3vw, 2rem); border-top: 2px solid var(--ink); background: var(--paper); }
+  .meta dl { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; margin: 0; font-size: 0.9rem; }
+  .meta dt { color: var(--slate); }
+  .meta dd { margin: 0; }
+  .open { display: inline-block; margin-top: 1rem; font-weight: 700; color: var(--gold-deep); }
+  .card:hover .open { text-decoration: underline; text-underline-offset: 3px; }
+  .card:hover { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .card:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  footer { border-top: 1px solid var(--grout); color: var(--slate); font-size: 0.9rem; }
+  footer a { color: var(--gold-deep); }
+  h2 { font-size: 1.1rem; margin: 0 0 0.6rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Maryland Tile Boss — two design directions</h1>
+    <p class="lede">
+      The same website, the same verified content, built twice with genuinely different art direction.
+      Both are complete: 26 pages each, fully responsive, and identical in what they say.
+    </p>
+    <p class="note">
+      <strong>This is a preview.</strong> It is blocked from search engines so it can never compete with
+      the live site. The phone number and address are real — please don't submit the contact form as a test.
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <a class="card a" href="version-a/">
+      <div class="swatch">
+        <p class="name">Trade Authority</p>
+        <p>Built out from the brand you already have — the Maryland flag mark, jobsite signage, and a layout that snaps to a tile grid with visible grout lines.</p>
+        <div class="chips" aria-hidden="true">
+          <span class="chip" style="background:#f5a11b"></span>
+          <span class="chip" style="background:#16171a"></span>
+          <span class="chip" style="background:#f3f0ea"></span>
+          <span class="chip" style="background:#d9d4cb"></span>
+        </div>
+      </div>
+      <div class="meta">
+        <dl>
+          <dt>Feel</dt><dd>Confident, direct, unmistakably a trade business</dd>
+          <dt>Type</dt><dd>Archivo Black + Archivo</dd>
+          <dt>Best for</dt><dd>Homeowners and contractors who want the expertise up front</dd>
+        </dl>
+        <span class="open">Open Version A</span>
+      </div>
+    </a>
+
+    <a class="card b" href="version-b/">
+      <div class="swatch">
+        <p class="name">Chesapeake <em>Modern</em></p>
+        <p>What the business could look like as a design-trade showroom brand — dark, editorial, photography-led, with the mark used sparingly.</p>
+        <div class="chips" aria-hidden="true">
+          <span class="chip" style="background:#1c1e1f"></span>
+          <span class="chip" style="background:#e8e3d9"></span>
+          <span class="chip" style="background:#b8894a"></span>
+          <span class="chip" style="background:#7c8e8a"></span>
+        </div>
+      </div>
+      <div class="meta">
+        <dl>
+          <dt>Feel</dt><dd>Quiet, architectural, interiors-magazine</dd>
+          <dt>Type</dt><dd>Bodoni Moda + Karla</dd>
+          <dt>Best for</dt><dd>Designers and higher-end residential work</dd>
+        </dl>
+        <span class="open">Open Version B</span>
+      </div>
+    </a>
+
+  </div>
+
+  <section style="margin-top:clamp(2.5rem,6vw,4rem)">
+    <h2>Worth clicking through on either one</h2>
+    <ul style="max-width:62ch;color:var(--slate);padding-left:1.1rem">
+      <li><strong>Showroom</strong> — the page no competitor in the area has</li>
+      <li><strong>Shower tile &amp; waterproofing</strong> — the technical depth nobody local is claiming</li>
+      <li><strong>Trade</strong> — the lock-box access programme, which has no local competition</li>
+      <li><strong>Portfolio</strong> — five real jobs, photographed as handed over</li>
+    </ul>
+    <p style="max-width:62ch;color:var(--slate)">Both versions resize down to a phone — worth checking on one.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Source, research and audit reports:
+      <a href="https://github.com/sherrybutt17-stack/maryland-tile-boss">github.com/sherrybutt17-stack/maryland-tile-boss</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
