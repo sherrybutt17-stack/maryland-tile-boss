@@ -10,16 +10,16 @@ at 14 Mayo Rd, Edgewater, MD, plus the research that shaped them.
 Both are static, dependency-free builds generated from one shared content model. 26 indexable pages each.
 
 ```bash
-cd version-a && python3 -m http.server 8801    # "Trade Authority"
+cd version-a && python3 -m http.server 8801    # "Glaze"
 cd version-b && python3 -m http.server 8802    # "Chesapeake Modern"
 ```
 
-| | **Version A — Trade Authority** | **Version B — Chesapeake Modern** |
+| | **Version A — Glaze** | **Version B — Chesapeake Modern** |
 |---|---|---|
-| Idea | Built from the client's real brand equity — the Maryland flag mascot mark, jobsite signage, tile-setting grids | What the business could look like as a design-trade showroom brand |
-| Palette | Flag gold `#F5A11B`, ink `#16171A`, bone `#F3F0EA`, grout `#D9D4CB` | Graphite `#1C1E1F`, oyster `#E8E3D9`, tidewater `#7C8E8A`, brass `#B8894A` |
-| Type | Archivo Black + Archivo (44 KB) | Bodoni Moda + Karla (69 KB) |
-| Structure | Modules snap to a tile grid separated by visible grout-line rules; hard edges, no shadows | Asymmetric 12-column editorial; images break the column edge; oversized display serif |
+| Idea | Bright, spacious and contemporary — porcelain ground, oversized headlines, soft-rounded media, one cobalt accent | What the business could look like as a design-trade showroom brand |
+| Palette | Glaze cobalt `#1E4FD8`, ink `#101114`, porcelain `#FCFBF9`, chalk `#F2F0EB` | Graphite `#1C1E1F`, oyster `#E8E3D9`, tidewater `#7C8E8A`, brass `#B8894A` |
+| Type | Bricolage Grotesque + Manrope (99 KB) | Bodoni Moda + Karla (69 KB) |
+| Structure | Floating pill nav, full-bleed rounded hero, bento and swatch grids, generous whitespace | Asymmetric 12-column editorial; images break the column edge; oversized display serif |
 | Motion | Staggered section reveals | One orchestrated hero reveal, then restraint |
 
 Neither uses the generic AI-page defaults — no cream-and-terracotta, no SaaS card kit, no all-caps eyebrow
@@ -46,19 +46,19 @@ Lighthouse 13.4.1, mobile profile, final build:
 
 | | Perf | A11y | Best Practices | SEO | LCP | CLS |
 |---|---|---|---|---|---|---|
-| A — home | 99 | 100 | 100 | 100 | 2.0 s | 0 |
-| A — porcelain | 100 | 100 | 100 | 100 | 1.8 s | 0 |
-| A — contact | 99 | 100 | 100 | 100 | 2.0 s | 0 |
-| B — home | 99 | 100 | 100 | 100 | 2.0 s | 0 |
-| B — porcelain | 99 | 100 | 100 | 100 | 2.2 s | 0 |
-| B — contact | 99 | 100 | 100 | 100 | 2.0 s | 0 |
+| A — home | 97 | 100 | 100 | 100 | 2.6 s | 0 |
+| A — trade | 98 | 100 | 100 | 100 | 2.3 s | 0 |
+| B — home | 99 | 100 | 100 | 100 | 2.2 s | 0 |
+| B — trade | 99 | 100 | 100 | 100 | 2.1 s | 0 |
+
+Version A's 2-point gap is its deliberately full-bleed 21:9 hero — a design choice, not a defect.
 
 Automated crawl of all 26 pages on both builds — **zero** broken links, duplicate/over-length titles or
 descriptions, heading-order jumps, missing alt text, missing dimensions, generic anchors, sitemap gaps,
 invalid JSON-LD, horizontal overflow (320–1920 px), axe-core WCAG violations, or console errors.
 
-The residual 1 performance point is test-server cache/compression headers, not site code. Both builds ship
-a `_headers` file that resolves it on any real host.
+The residual performance points are test-server cache/compression headers plus Version A's large hero,
+not defects. Both builds ship a `_headers` file that resolves the header side on any real host.
 
 ---
 

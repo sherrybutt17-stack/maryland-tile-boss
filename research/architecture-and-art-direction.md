@@ -84,35 +84,27 @@ One primary destination per intent. No doorway pages — every location page car
 
 Both versions are built from the same content and the same performance budget, but they are separately art-directed — different type, palette, grid, motion, and page composition. Neither uses: cream + serif + terracotta, acid-green-on-black, SaaS card kits, ALL-CAPS eyebrows, `01/02/03` markers on non-sequences, middle-dot meta strings, or `→` glued to button text.
 
-### VERSION A — "Trade Authority"
-Built out from the brand's real equity: the amber (`#ffa826`) and near-black already in use, plus the vernacular of the trade — jobsite signage, tool brands, spec sheets, grout lines, tile setting grids.
+### VERSION A — "Glaze"  *(redesigned)*
+Bright, spacious and contemporary. The first pass leaned on the client's Maryland-flag mascot
+equity and a hard-edged tile-grid; the client asked for something distinctly modern, so this was
+rebuilt from the ground up — new stylesheet, new renderer, same content.
 
 - **Palette**
-  - `--amber: #F5A11B` — the brand's own yellow, pulled slightly deeper so it holds on white and passes contrast as a solid
-  - `--ink: #16171A` — near-black for type (chosen, not the #0B0B0B default tint)
-  - `--slate: #4A5057` — secondary text, drawn from unglazed porcelain body
-  - `--bone: #F3F0EA` — warm off-white ground, from unpolished travertine
-  - `--grout: #D9D4CB` — rule/divider colour, literally named for what it is
-  - `--clay: #8C4A2F` — deep terracotta used *only* in tiny quantities on the materials pages
-- **Type** — Two families, clearly distinct: a condensed grotesque with real weight for display (jobsite/signage register), and a humanist sans for body. Display set tight and large; body generous.
-- **Layout concept** — A structural tile grid that the page actually obeys: modules snap to a 4-column module with visible grout-line rules between them. Content blocks are sized in tile units (1×1, 2×1, 2×2) so the page reads as a laid-out surface, not stacked cards.
-- **Boldness spent on:** the hero — a full-bleed real project photo with the display type set as a hard-edged block over it, and the showroom's actual hours/address treated as signage, not fine print.
-
-```
-┌─────────────────────────────────────────────┐
-│ [MTB]  Showroom Installation Tile Trade  ☎ │  utility + nav, sticky
-├─────────────────────────────────────────────┤
-│ ███ REAL PROJECT PHOTO, FULL BLEED ███████ │
-│  TILE, SET RIGHT.                           │  display type, hard block
-│  Edgewater showroom. 45 years on the job.   │
-│  [Visit the showroom] [Get an install quote]│
-├──────────┬──────────┬──────────┬───────────┤
-│ 45 yrs   │ 3rd gen  │ Mon–Sat  │ Free      │  grout-line rules between
-│          │          │ 10–4     │ consult   │  (facts, not decoration)
-├──────────┴──────────┴──────────┴───────────┤
-│  PORCELAIN │ CERAMIC │  STONE  │  GLASS    │  2×2 material tiles, photo-led
-└─────────────────────────────────────────────┘
-```
+  - `--glaze: #1E4FD8` — glazed cobalt, the oldest colour in the tile trade, used as the single accent
+  - `--ink: #101114` — near-black for type
+  - `--porcelain: #FCFBF9` — the page ground, named for the material
+  - `--chalk: #F2F0EB` — alternating section ground
+  - `--glaze-soft: #E9EDFC` — the tint used for the trade panel
+  - `--line: #E4E1DA` — hairline borders
+- **Type** — Bricolage Grotesque for display (a contemporary grotesque with genuine character, set
+  in mixed case at large sizes) and Manrope for body. Deliberately not the uppercase signage
+  register of the first pass.
+- **Layout concept** — a floating pill navigation over a full-bleed 21:9 rounded hero, then generous
+  vertical rhythm: a four-up stat row, bento card grids, tall material swatches with pill labels, a
+  cobalt-tinted feature panel, and a dark rounded closing block. Radius and air do the work that
+  rules and grout lines did before.
+- **Boldness spent on:** the hero — an oversized mixed-case headline with the showroom photographed
+  full width beneath it, and nothing else on the page competing for attention.
 
 ### VERSION B — "Chesapeake Modern"
 Dark, architectural, editorial — but grounded in Maryland/Chesapeake material language rather than generic luxury: wet slate, oyster shell, tidewater, weathered dock cedar.

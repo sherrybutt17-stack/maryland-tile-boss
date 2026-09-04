@@ -53,7 +53,7 @@ Source of truth: `source-of-truth/business-data.md`, extracted from the live sit
 ```
 src/content/    site.js · pages.js · materials.js · images.js · blog.js   ← all content, design-agnostic
 src/lib/        html.mjs (picture/preload helpers) · schema.mjs (JSON-LD)
-src/themes/a/   "Trade Authority"    — Maryland flag palette, Archivo Black, tile-grid layout
+src/themes/a/   "Glaze"              — porcelain + cobalt, Bricolage Grotesque, rounded/spacious
 src/themes/b/   "Chesapeake Modern"  — graphite/oyster/brass, Bodoni Moda, editorial asymmetry
 scripts/        build.mjs · images.mjs · fonts.mjs · qa.mjs · shots.mjs · crawl.py
 version-a/      built site (26 indexable URLs + 404)
@@ -80,8 +80,8 @@ Serve locally: `python3 -m http.server 8801` in `version-a/`, `8802` in `version
 
 Both builds, verified by `scripts/qa.mjs` and Lighthouse 13.4.1:
 
-- Mobile Lighthouse **99–100** performance / **100** accessibility / **100** best practices / **100** SEO
-- **CLS 0** on every page; LCP 1.9–2.2 s mobile
+- Mobile Lighthouse **97–99** performance / **100** accessibility / **100** best practices / **100** SEO
+- **CLS 0** on every page; LCP 2.1–2.6 s mobile (A's full-bleed 21:9 hero costs it ~2 points vs B)
 - **0** broken links, duplicate or over-length titles/descriptions, heading jumps, missing alt text
 - **0** axe-core violations (WCAG 2.0/2.1/2.2 A + AA)
 - **0** horizontal overflow across 320–1920 px
@@ -92,6 +92,11 @@ Regressions to watch for — each of these was a real bug caught in QA:
 - HTML `width`/`height` attributes are presentational hints that override CSS crops — keep the global
   `img { height: auto }` and the `picture.ar` wrapper.
 - Scroll-reveal must stay gated behind the `.js` class or content disappears without JavaScript.
+- `backdrop-filter` on fixed/sticky elements repaints every scroll frame. Three of them cost
+  Version A 8 Lighthouse points and 320ms of blocking time. Check the main-thread breakdown
+  before adding one back.
+- `scroll-behavior: smooth` breaks scripted scrolling in screenshot/QA tooling — the harness
+  overrides it to `auto` during capture. Blank sections in a screenshot are usually this, not a bug.
 
 ---
 
