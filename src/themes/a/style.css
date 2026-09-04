@@ -252,6 +252,13 @@ a.card:hover .go { color: var(--glaze-deep); text-decoration: underline; text-un
 }
 .swatch:hover .swatch-name { background: var(--glaze); color: var(--white); }
 .swatch-name i { font-style: normal; color: var(--glaze); font-size: 0.85rem; }
+.swatch-name span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* In a two-up mobile grid there is not room for the name and the "View" affordance.
+   The whole tile is the link, so the name keeps the space and View is dropped. */
+@media (max-width: 620px) {
+  .swatch-name { font-size: 0.86rem; padding: 0.5rem 0.85rem; white-space: nowrap; }
+  .swatch-name i { display: none; }
+}
 .swatch:hover .swatch-name i { color: var(--white); }
 
 /* ---------- Feature panel ---------- */

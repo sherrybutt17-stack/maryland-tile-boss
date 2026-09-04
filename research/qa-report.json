@@ -30,9 +30,7 @@
    "/tile/porcelain/",
    "/trade/"
   ],
-  "issues": [
-   "DESC 177ch /standards/"
-  ],
+  "issues": [],
   "overflow": [],
   "axe": [],
   "externals": [
@@ -71,9 +69,7 @@
    "/tile/porcelain/",
    "/trade/"
   ],
-  "issues": [
-   "DESC 177ch /standards/"
-  ],
+  "issues": [],
   "overflow": [],
   "axe": [],
   "externals": [

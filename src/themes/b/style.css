@@ -298,7 +298,9 @@ td { color: var(--fog); }
   .frames > *:nth-child(6n + 5) { grid-column: span 3; aspect-ratio: 4 / 3; }
   .frames > *:nth-child(6n + 6) { grid-column: span 3; aspect-ratio: 4 / 3; }
 }
-.frames > * { overflow: hidden; }
+/* Below the staggered layout, every frame shares one ratio so the rows line up. */
+.frames > * { overflow: hidden; aspect-ratio: 4 / 3; }
+@media (min-width: 900px) { .frames > * { aspect-ratio: auto; } }
 .frames > * > picture { height: 100%; }
 .frames > * img { width: 100%; height: 100%; object-fit: cover; }
 
