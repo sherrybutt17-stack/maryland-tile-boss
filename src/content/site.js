@@ -81,6 +81,7 @@ export const TODO_VERIFY = [
   'CONFIRM: 443-871-3876 chosen as the single public number (matches Google + Yelp + the "Call Mike" block). 443-871-0971 is in the site CMS. One must be retired publicly.',
   'The relationship to "Nash & Sons dba Digi-tile" and the Crofton MD 21114 listings on Houzz/Angi/HomeAdvisor/Manta — legacy records or a separate entity? Removal action needs the owner’s answer.',
   'Correct opening hours — the site says Mon–Sat 10–4, Yelp says Mon–Fri 10–5 / Sat 10–4, a cached version said "by appointment".',
+  'PHOTOS WANTED for /standards/: tear-out shots from failed installations Mike has replaced — hollow/debonded tile, failed shower waterproofing, cracked grout at a missing movement joint, a flat unsealed niche. His own photos are the only honest way to show the "before" side, and would make that page far stronger than the diagrams currently standing in.',
 ];
 
 export const nav = [
@@ -109,6 +110,7 @@ export const footerNav = {
   ],
   Company: [
     { label: 'Visit the showroom', href: '/showroom/' },
+    { label: 'What good tile work looks like', href: '/standards/' },
     { label: 'Designers, builders & contractors', href: '/trade/' },
     { label: 'Serving Annapolis', href: '/annapolis/' },
     { label: 'Portfolio', href: '/portfolio/' },

@@ -34,6 +34,7 @@
   --glaze-soft: #e9edfc;
   --celadon: #cfe0d8;
   --white: #fff;
+  --wrong: #b23b2e;
 
   --r-sm: 12px;
   --r: 20px;
@@ -281,6 +282,46 @@ a.card:hover .go { color: var(--glaze-deep); text-decoration: underline; text-un
 }
 .step h3 { font-size: 1.08rem; margin-bottom: 0.45rem; }
 .step p { color: var(--slate); font-size: 0.95rem; margin: 0; }
+
+/* ---------- Right/wrong diagrams ---------- */
+.diagrams { display: grid; gap: clamp(1rem, 2vw, 1.6rem); grid-template-columns: 1fr; }
+@media (min-width: 860px) { .diagrams { grid-template-columns: repeat(2, 1fr); } }
+.diagram { margin: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.diagram-art { padding: 1.2rem 1.2rem 0.4rem; }
+.diagram-art svg { width: 100%; height: auto; }
+.diagram-legend {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  padding: 0 1.2rem 1rem; font-size: 0.85rem; font-weight: 600; text-align: center;
+}
+.dl-bad { color: var(--wrong); }
+.dl-good { color: var(--glaze); }
+.diagram figcaption { padding: 1.1rem 1.2rem 1.3rem; border-top: 1px solid var(--line); }
+.diagram h3 { font-size: 1.06rem; margin-bottom: 0.45rem; }
+.diagram p { color: var(--slate); font-size: 0.94rem; margin: 0; }
+.dg-sub { fill: #cfcbc3; }
+.dg-tile { fill: var(--ink); }
+.dg-bad rect { fill: var(--wrong); }
+.dg-good { fill: var(--glaze); opacity: 0.9; }
+.dg-comb path { stroke: #fff; stroke-width: 2; opacity: 0.55; }
+.dg-void { fill: var(--wrong); font-size: 9px; font-family: inherit; }
+.dg-ok { fill: var(--glaze); font-size: 9px; font-family: inherit; }
+.dg-bad-line { fill: none; stroke: var(--wrong); stroke-width: 4; }
+.dg-good-line { fill: none; stroke: var(--glaze); stroke-width: 4; }
+.dg-water path { stroke: #6b7280; stroke-width: 2; fill: none; }
+.dg-water marker path, marker path { fill: #6b7280; stroke: none; }
+.dg-kerb { fill: #cfcbc3; }
+
+/* ---------- Annotated details ---------- */
+.notes { display: grid; gap: clamp(0.9rem, 1.8vw, 1.4rem); grid-template-columns: 1fr; }
+@media (min-width: 700px) { .notes { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1150px) { .notes { grid-template-columns: repeat(3, 1fr); } }
+.note {
+  margin: 0; background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--r); overflow: hidden;
+}
+.note figcaption { padding: clamp(1.05rem, 2vw, 1.4rem); }
+.note h3 { font-size: 1.06rem; margin-bottom: 0.45rem; }
+.note p { color: var(--slate); font-size: 0.94rem; margin: 0; }
 
 /* ---------- Checklist ---------- */
 .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; max-width: 74ch; }

@@ -3,6 +3,7 @@ import path from 'path';
 import { site, nav } from '../src/content/site.js';
 import { pages } from '../src/content/pages.js';
 import { materialPages } from '../src/content/materials.js';
+import { standardsPage } from '../src/content/standards.js';
 import { projects } from '../src/content/images.js';
 import { posts } from '../src/content/blog.js';
 import { imageMeta, esc } from '../src/lib/html.mjs';
@@ -50,7 +51,7 @@ function rebase(html, base) {
 /* ---------------------------------------------------------------- page set */
 
 function buildPageList() {
-  const list = [...pages, ...materialPages].map((p) => ({
+  const list = [...pages, ...materialPages, standardsPage].map((p) => ({
     ...p,
     href: p.slug === '' ? '/' : `/${p.slug}/`,
     kind: 'page',

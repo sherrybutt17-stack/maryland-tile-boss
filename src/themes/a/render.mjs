@@ -239,6 +239,35 @@ ${secHead(s)}
 ${contactForm()}
 </div></section>`;
 
+    case 'diagrams':
+      return `<section class="sec sec-chalk"><div class="shell">
+${secHead(s)}
+<div class="diagrams reveal">
+${s.items
+  .map(
+    (d) => `<figure class="diagram">
+<div class="diagram-art">${d.svg}</div>
+<div class="diagram-legend"><span class="dl-bad">${esc(d.wrongLabel)}</span><span class="dl-good">${esc(d.rightLabel)}</span></div>
+<figcaption><h3>${esc(d.title)}</h3><p>${esc(d.note)}</p></figcaption>
+</figure>`
+  )
+  .join('\n')}
+</div></div></section>`;
+
+    case 'annotated':
+      return `<section class="sec"><div class="shell">
+${secHead(s)}
+<div class="notes reveal">
+${s.items
+  .map(
+    (n) => `<figure class="note">
+${picture(n.image, { sizes: '(min-width:1150px) 32vw, (min-width:700px) 48vw, 100vw', crop: '4/3' })}
+<figcaption><h3>${esc(n.title)}</h3><p>${esc(n.note)}</p></figcaption>
+</figure>`
+  )
+  .join('\n')}
+</div></div></section>`;
+
     case 'related':
       return relatedBlock(page);
 

@@ -223,6 +223,16 @@ export const pages = [
           'If you already have a contractor you trust, we will happily sell you the tile and help you get the quantities and trim right. Buying tile here does not commit you to installation.',
         ],
       },
+      {
+        type: 'feature',
+        heading: 'How to tell careful work from ordinary work',
+        image: 'settingTile',
+        body: [
+          'Tile hides its own workmanship. Once the grout is in, the coverage behind each tile and the waterproofing behind the wall are sealed away where nobody can check them — which is why the cheapest quote is so often the most expensive one.',
+          'We wrote down the six places corners normally get cut, what a careful job does instead, and how long it takes before you find out which one you paid for.',
+        ],
+        cta: { label: 'What good tile work looks like', href: '/standards/' },
+      },
       { type: 'projects', heading: 'Recent installations' },
       { type: 'faq', heading: 'Installation questions' },
       { type: 'finalCta' },

@@ -1,6 +1,6 @@
 {
  "a": {
-  "pages": 26,
+  "pages": 27,
   "crawled": [
    "/",
    "/about/",
@@ -17,6 +17,7 @@
    "/portfolio/stone-fireplace/",
    "/portfolio/two-rivers-backsplash/",
    "/showroom/",
+   "/standards/",
    "/tile-installation/",
    "/tile-installation/backsplash/",
    "/tile-installation/bathroom/",
@@ -29,7 +30,9 @@
    "/tile/porcelain/",
    "/trade/"
   ],
-  "issues": [],
+  "issues": [
+   "DESC 177ch /standards/"
+  ],
   "overflow": [],
   "axe": [],
   "externals": [
@@ -38,7 +41,7 @@
   ]
  },
  "b": {
-  "pages": 26,
+  "pages": 27,
   "crawled": [
    "/",
    "/about/",
@@ -55,6 +58,7 @@
    "/portfolio/stone-fireplace/",
    "/portfolio/two-rivers-backsplash/",
    "/showroom/",
+   "/standards/",
    "/tile-installation/",
    "/tile-installation/backsplash/",
    "/tile-installation/bathroom/",
@@ -67,7 +71,9 @@
    "/tile/porcelain/",
    "/trade/"
   ],
-  "issues": [],
+  "issues": [
+   "DESC 177ch /standards/"
+  ],
   "overflow": [],
   "axe": [],
   "externals": [

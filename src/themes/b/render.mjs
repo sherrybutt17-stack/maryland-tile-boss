@@ -250,6 +250,35 @@ ${headBlock(s)}
 ${contactForm()}
 </div></section>`;
 
+    case 'diagrams':
+      return `<section class="section section-raised"><div class="wrap">
+${headBlock(s)}
+<div class="diagrams reveal">
+${s.items
+  .map(
+    (d) => `<figure class="diagram">
+<div class="diagram-art">${d.svg}</div>
+<div class="diagram-legend"><span class="dl-bad">${esc(d.wrongLabel)}</span><span class="dl-good">${esc(d.rightLabel)}</span></div>
+<figcaption><h3 class="serif">${esc(d.title)}</h3><p>${esc(d.note)}</p></figcaption>
+</figure>`
+  )
+  .join('\n')}
+</div></div></section>`;
+
+    case 'annotated':
+      return `<section class="section section-hair"><div class="wrap">
+${headBlock(s)}
+<div class="notes reveal">
+${s.items
+  .map(
+    (n) => `<figure class="note">
+${picture(n.image, { sizes: '(min-width:900px) 46vw, 100vw', crop: '4/3' })}
+<figcaption><h3 class="serif">${esc(n.title)}</h3><p>${esc(n.note)}</p></figcaption>
+</figure>`
+  )
+  .join('\n')}
+</div></div></section>`;
+
     case 'related':
       return relatedBlock(page);
 

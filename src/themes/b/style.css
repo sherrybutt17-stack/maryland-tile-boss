@@ -31,6 +31,7 @@
   --brass: #b8894a;
   --brass-hi: #d4a468;
   --line: #33383a;
+  --wrong: #d4756a;
 
   --measure: 60ch;
   --pad-x: clamp(1.2rem, 6vw, 6rem);
@@ -232,6 +233,42 @@ button.btn { cursor: pointer; font-family: inherit; }
 }
 .sequence h3 { font-family: 'Bodoni Moda', serif; font-size: var(--step-2); margin-bottom: 0.5rem; }
 .sequence p { color: var(--fog); max-width: 58ch; }
+
+/* ---------- Right/wrong diagrams ---------- */
+.diagrams { display: grid; gap: clamp(1.6rem, 3vw, 2.6rem); grid-template-columns: 1fr; }
+@media (min-width: 860px) { .diagrams { grid-template-columns: repeat(2, 1fr); } }
+.diagram { margin: 0; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; background: var(--slate-hi); }
+.diagram-art { padding: 1.3rem 1.3rem 0.4rem; }
+.diagram-art svg { width: 100%; height: auto; }
+.diagram-legend {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  padding: 0 1.3rem 1.1rem; font-size: 0.82rem; letter-spacing: 0.06em; text-align: center;
+}
+.dl-bad { color: var(--wrong); }
+.dl-good { color: var(--brass-hi); }
+.diagram figcaption { padding: 1.2rem 1.3rem 1.4rem; border-top: 1px solid var(--line); }
+.diagram h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
+.diagram p { color: var(--fog); font-size: 0.95rem; margin: 0; }
+.dg-sub { fill: #4a5052; }
+.dg-tile { fill: var(--oyster); }
+.dg-bad rect { fill: var(--wrong); }
+.dg-good { fill: var(--brass); opacity: 0.9; }
+.dg-comb path { stroke: var(--graphite); stroke-width: 2; opacity: 0.5; }
+.dg-void { fill: var(--wrong); font-size: 9px; font-family: inherit; }
+.dg-ok { fill: var(--brass-hi); font-size: 9px; font-family: inherit; }
+.dg-bad-line { fill: none; stroke: var(--wrong); stroke-width: 4; }
+.dg-good-line { fill: none; stroke: var(--brass-hi); stroke-width: 4; }
+.dg-water path { stroke: var(--fog); stroke-width: 2; fill: none; }
+.dg-water marker path, marker path { fill: var(--fog); stroke: none; }
+.dg-kerb { fill: #4a5052; }
+
+/* ---------- Annotated details ---------- */
+.notes { display: grid; gap: clamp(1.6rem, 3.5vw, 3rem); grid-template-columns: 1fr; }
+@media (min-width: 900px) { .notes { grid-template-columns: repeat(2, 1fr); } }
+.note { margin: 0; border-top: 1px solid var(--line); padding-top: 1.4rem; }
+.note picture { margin-bottom: 1.2rem; }
+.note h3 { font-size: var(--step-2); margin-bottom: 0.6rem; }
+.note p { color: var(--fog); }
 
 /* ---------- Checklist ---------- */
 .marks { list-style: none; margin: 0; padding: 0; max-width: 70ch; }
