@@ -1,0 +1,78 @@
+{
+ "a": {
+  "pages": 26,
+  "crawled": [
+   "/",
+   "/about/",
+   "/annapolis/",
+   "/blog/",
+   "/blog/choosing-glass-tile-for-a-shower/",
+   "/blog/glass-tile-backsplash-pros-and-cons/",
+   "/contact/",
+   "/faq/",
+   "/portfolio/",
+   "/portfolio/backsplash-in-bowie/",
+   "/portfolio/bath-surround/",
+   "/portfolio/dunkirk-bathroom/",
+   "/portfolio/stone-fireplace/",
+   "/portfolio/two-rivers-backsplash/",
+   "/showroom/",
+   "/tile-installation/",
+   "/tile-installation/backsplash/",
+   "/tile-installation/bathroom/",
+   "/tile-installation/floors/",
+   "/tile-installation/shower/",
+   "/tile/",
+   "/tile/ceramic/",
+   "/tile/glass-and-mosaic/",
+   "/tile/natural-stone/",
+   "/tile/porcelain/",
+   "/trade/"
+  ],
+  "issues": [],
+  "overflow": [],
+  "axe": [],
+  "externals": [
+   "https://www.facebook.com/61574520041133",
+   "https://www.google.com/maps/search/?api=1&query=38.9402169,-76.5622115"
+  ]
+ },
+ "b": {
+  "pages": 26,
+  "crawled": [
+   "/",
+   "/about/",
+   "/annapolis/",
+   "/blog/",
+   "/blog/choosing-glass-tile-for-a-shower/",
+   "/blog/glass-tile-backsplash-pros-and-cons/",
+   "/contact/",
+   "/faq/",
+   "/portfolio/",
+   "/portfolio/backsplash-in-bowie/",
+   "/portfolio/bath-surround/",
+   "/portfolio/dunkirk-bathroom/",
+   "/portfolio/stone-fireplace/",
+   "/portfolio/two-rivers-backsplash/",
+   "/showroom/",
+   "/tile-installation/",
+   "/tile-installation/backsplash/",
+   "/tile-installation/bathroom/",
+   "/tile-installation/floors/",
+   "/tile-installation/shower/",
+   "/tile/",
+   "/tile/ceramic/",
+   "/tile/glass-and-mosaic/",
+   "/tile/natural-stone/",
+   "/tile/porcelain/",
+   "/trade/"
+  ],
+  "issues": [],
+  "overflow": [],
+  "axe": [],
+  "externals": [
+   "https://www.facebook.com/61574520041133",
+   "https://www.google.com/maps/search/?api=1&query=38.9402169,-76.5622115"
+  ]
+ }
+}

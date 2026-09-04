@@ -1,0 +1,994 @@
+{
+ "logo": {
+  "alt": "Maryland Tile Boss logo: Mike DiGirolamo holding a notched trowel over a Maryland flag shield",
+  "width": 1271,
+  "height": 1238,
+  "ratio": 1.0267,
+  "fallbackExt": "png",
+  "variants": [
+   {
+    "w": 64,
+    "h": 62
+   },
+   {
+    "w": 128,
+    "h": 125
+   },
+   {
+    "w": 256,
+    "h": 249
+   },
+   {
+    "w": 400,
+    "h": 390
+   }
+  ]
+ },
+ "logoWide": {
+  "alt": "Maryland Tile Boss — Maryland’s Tile Authority",
+  "width": 1190,
+  "height": 1196,
+  "ratio": 0.995,
+  "fallbackExt": "png",
+  "variants": [
+   {
+    "w": 64,
+    "h": 64
+   },
+   {
+    "w": 128,
+    "h": 129
+   },
+   {
+    "w": 256,
+    "h": 257
+   },
+   {
+    "w": 400,
+    "h": 402
+   }
+  ]
+ },
+ "crab": {
+  "alt": "Maryland blue crab holding a tile trowel, the Maryland Tile Boss mark",
+  "width": 1024,
+  "height": 1024,
+  "ratio": 1,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 64,
+    "h": 64
+   },
+   {
+    "w": 128,
+    "h": 128
+   },
+   {
+    "w": 256,
+    "h": 256
+   },
+   {
+    "w": 400,
+    "h": 400
+   }
+  ]
+ },
+ "sharedShowroom": {
+  "alt": "Access Digitile Shared Showroom — keyless entry programme for design and building trades",
+  "width": 404,
+  "height": 229,
+  "ratio": 1.7642,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 227
+   }
+  ]
+ },
+ "showroomRacks": {
+  "alt": "Racks of full-size tile and plank samples standing on the showroom floor at 14 Mayo Road",
+  "width": 2048,
+  "height": 1536,
+  "ratio": 1.3333,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   },
+   {
+    "w": 800,
+    "h": 600
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1600,
+    "h": 1200
+   }
+  ]
+ },
+ "showroomWall": {
+  "alt": "Wall-mounted mosaic and trim sample boards inside the Edgewater tile showroom",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomBoards": {
+  "alt": "Swing-arm display boards holding mosaic and glass tile samples",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomAisle": {
+  "alt": "Sample boards lining the wall of the Edgewater showroom",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomCounter": {
+  "alt": "Showroom counter with tile murals and Maryland licence plates reading MICHAEL and DIGITILE",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomMurals": {
+  "alt": "Custom tile murals and mosaic displays beside the showroom service counter",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomTrim": {
+  "alt": "Trim, pencil and liner tile organised on showroom shelving",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomDesk": {
+  "alt": "Selection table in the showroom where tile choices are laid out side by side",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showroomWide": {
+  "alt": "Wide view down the tile showroom with sample racks on both sides",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "storefront": {
+  "alt": "Storefront at 14 Mayo Road, Edgewater, with the Digitile International Design Center sign above the door",
+  "width": 2048,
+  "height": 1884,
+  "ratio": 1.087,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 368
+   },
+   {
+    "w": 800,
+    "h": 736
+   },
+   {
+    "w": 1200,
+    "h": 1104
+   },
+   {
+    "w": 1600,
+    "h": 1472
+   }
+  ]
+ },
+ "storefrontSign": {
+  "alt": "Digitile International Design Center sign on the Edgewater storefront",
+  "width": 2038,
+  "height": 1595,
+  "ratio": 1.2777,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 313
+   },
+   {
+    "w": 800,
+    "h": 626
+   },
+   {
+    "w": 1200,
+    "h": 939
+   },
+   {
+    "w": 1600,
+    "h": 1252
+   }
+  ]
+ },
+ "tradeSession": {
+  "alt": "Contractors gathered around a demonstration build in the Edgewater showroom, tile sample boards lining the walls behind them",
+  "width": 1536,
+  "height": 1051,
+  "ratio": 1.4615,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 274
+   },
+   {
+    "w": 800,
+    "h": 547
+   },
+   {
+    "w": 1200,
+    "h": 821
+   }
+  ]
+ },
+ "tradeSessionAlt": {
+  "alt": "A hands-on session in the showroom with contractors working through an installation detail",
+  "width": 1536,
+  "height": 1228,
+  "ratio": 1.2508,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 320
+   },
+   {
+    "w": 800,
+    "h": 640
+   },
+   {
+    "w": 1200,
+    "h": 959
+   }
+  ]
+ },
+ "tradeGroup": {
+  "alt": "Trade visitors in the showroom during a contractor session, mosaic and trim displays behind them",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "settingTile": {
+  "alt": "Large-format tile being set into a notched-trowel mortar bed with levelling clips",
+  "width": 1000,
+  "height": 668,
+  "ratio": 1.497,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   },
+   {
+    "w": 800,
+    "h": 534
+   }
+  ]
+ },
+ "grouting": {
+  "alt": "Grout being worked into floor tile joints around a linear drain",
+  "width": 1000,
+  "height": 668,
+  "ratio": 1.497,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   },
+   {
+    "w": 800,
+    "h": 534
+   }
+  ]
+ },
+ "settingFloor": {
+  "alt": "Dark large-format floor tile being placed over a combed mortar bed",
+  "width": 612,
+  "height": 408,
+  "ratio": 1.5,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   }
+  ]
+ },
+ "waterproofBoard": {
+  "alt": "Mike DiGirolamo pointing to a shower assembly diagram beside a checklist: preparation, materials, waterproofing, coverage, movement joints, workmanship",
+  "width": 673,
+  "height": 505,
+  "ratio": 1.3327,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   }
+  ]
+ },
+ "hexMosaic": {
+  "alt": "Hexagon mosaic sheet in mixed metallic and stone finishes",
+  "width": 1000,
+  "height": 667,
+  "ratio": 1.4993,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   },
+   {
+    "w": 800,
+    "h": 534
+   }
+  ]
+ },
+ "glassMosaic": {
+  "alt": "Brightly coloured glass mosaic tile in red, orange, blue and white",
+  "width": 1000,
+  "height": 667,
+  "ratio": 1.4993,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   },
+   {
+    "w": 800,
+    "h": 534
+   }
+  ]
+ },
+ "slateWall": {
+  "alt": "Split-face slate tile laid in a running bond on a wall",
+  "width": 720,
+  "height": 540,
+  "ratio": 1.3333,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   }
+  ]
+ },
+ "stoneWarm": {
+  "alt": "Warm-toned natural stone tile with heavy veining",
+  "width": 720,
+  "height": 540,
+  "ratio": 1.3333,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   }
+  ]
+ },
+ "stoneCool": {
+  "alt": "Grey and rust natural stone tile in a stacked layout",
+  "width": 720,
+  "height": 540,
+  "ratio": 1.3333,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   }
+  ]
+ },
+ "herringbone": {
+  "alt": "Terracotta and patterned tile arranged in a herringbone layout",
+  "width": 1000,
+  "height": 669,
+  "ratio": 1.4948,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 268
+   },
+   {
+    "w": 800,
+    "h": 535
+   }
+  ]
+ },
+ "stoneSamples": {
+  "alt": "Four natural stone tile samples in green, grey and sand tones",
+  "width": 1000,
+  "height": 617,
+  "ratio": 1.6207,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 247
+   },
+   {
+    "w": 800,
+    "h": 494
+   }
+  ]
+ },
+ "largeFormat": {
+  "alt": "Stacked large-format porcelain panels in white and cream",
+  "width": 1000,
+  "height": 667,
+  "ratio": 1.4993,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   },
+   {
+    "w": 800,
+    "h": 534
+   }
+  ]
+ },
+ "greenGloss": {
+  "alt": "Glossy olive-green fluted wall tile on a sample board",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "tileStack": {
+  "alt": "Stack of glazed tile in red, blue, green and yellow",
+  "width": 1000,
+  "height": 750,
+  "ratio": 1.3333,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   },
+   {
+    "w": 800,
+    "h": 600
+   }
+  ]
+ },
+ "greyPlank": {
+  "alt": "Grey stone-look porcelain plank tile",
+  "width": 1000,
+  "height": 667,
+  "ratio": 1.4993,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 267
+   },
+   {
+    "w": 800,
+    "h": 534
+   }
+  ]
+ },
+ "twoRiversA": {
+  "alt": "Linear glass mosaic backsplash in blue, grey and white running behind a gas cooktop",
+  "width": 2048,
+  "height": 1152,
+  "ratio": 1.7778,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 225
+   },
+   {
+    "w": 800,
+    "h": 450
+   },
+   {
+    "w": 1200,
+    "h": 675
+   },
+   {
+    "w": 1600,
+    "h": 900
+   }
+  ]
+ },
+ "twoRiversB": {
+  "alt": "Glass mosaic backsplash carried up the wall between cabinets and granite counter",
+  "width": 2048,
+  "height": 1152,
+  "ratio": 1.7778,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 225
+   },
+   {
+    "w": 800,
+    "h": 450
+   },
+   {
+    "w": 1200,
+    "h": 675
+   },
+   {
+    "w": 1600,
+    "h": 900
+   }
+  ]
+ },
+ "twoRiversC": {
+  "alt": "Backsplash mosaic meeting the underside of the wall cabinets in a Two Rivers kitchen",
+  "width": 2048,
+  "height": 1152,
+  "ratio": 1.7778,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 225
+   },
+   {
+    "w": 800,
+    "h": 450
+   },
+   {
+    "w": 1200,
+    "h": 675
+   },
+   {
+    "w": 1600,
+    "h": 900
+   }
+  ]
+ },
+ "twoRiversD": {
+  "alt": "Glass mosaic backsplash behind a kitchen counter with pendant lighting above",
+  "width": 2048,
+  "height": 1152,
+  "ratio": 1.7778,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 225
+   },
+   {
+    "w": 800,
+    "h": 450
+   },
+   {
+    "w": 1200,
+    "h": 675
+   },
+   {
+    "w": 1600,
+    "h": 900
+   }
+  ]
+ },
+ "twoRiversE": {
+  "alt": "Close view of the linear glass mosaic tile used on the Two Rivers backsplash",
+  "width": 1152,
+  "height": 2048,
+  "ratio": 0.5625,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 711
+   },
+   {
+    "w": 800,
+    "h": 1422
+   }
+  ]
+ },
+ "bowieA": {
+  "alt": "Geometric marble-look backsplash behind a range in a Bowie kitchen",
+  "width": 2048,
+  "height": 1536,
+  "ratio": 1.3333,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 300
+   },
+   {
+    "w": 800,
+    "h": 600
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1600,
+    "h": 1200
+   }
+  ]
+ },
+ "bowieB": {
+  "alt": "Patterned stone backsplash running along the counter to the window",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "bowieC": {
+  "alt": "Corner detail of the geometric backsplash meeting the upper cabinets",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "stoneFireplaceA": {
+  "alt": "Floor-to-ceiling dry-stack stone fireplace surround with a timber mantel",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "stoneFireplaceB": {
+  "alt": "Dry-stack stone veneer carried up a two-storey chimney breast",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "stoneFireplaceC": {
+  "alt": "Stone fireplace surround with flanking built-in shelving",
+  "width": 1536,
+  "height": 2048,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   },
+   {
+    "w": 800,
+    "h": 1067
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "showerA": {
+  "alt": "Walk-in shower in large-format grey tile with a recessed niche and mosaic accent band",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "showerB": {
+  "alt": "Shower niche framed in mosaic tile with a built-in bench alongside",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "showerC": {
+  "alt": "Tiled shower bench and controls in a large-format grey tile surround",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "showerD": {
+  "alt": "Walk-in shower with a mosaic accent band running the length of the wall",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "showerE": {
+  "alt": "Recessed shower niche with a stone shelf set into large-format tile",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "bathA": {
+  "alt": "Bath surround in stone-look tile with square accent inserts",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "bathB": {
+  "alt": "Tiled bath and shower surround with a tiled step and accent detail",
+  "width": 720,
+  "height": 960,
+  "ratio": 0.75,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 533
+   }
+  ]
+ },
+ "kitchenFinished": {
+  "alt": "Finished kitchen with a white tile backsplash, open shelving and pendant lights",
+  "width": 1200,
+  "height": 628,
+  "ratio": 1.9108,
+  "fallbackExt": "jpg",
+  "variants": [
+   {
+    "w": 400,
+    "h": 209
+   },
+   {
+    "w": 800,
+    "h": 419
+   },
+   {
+    "w": 1200,
+    "h": 628
+   }
+  ]
+ }
+}

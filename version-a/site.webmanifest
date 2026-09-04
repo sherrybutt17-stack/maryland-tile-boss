@@ -1,0 +1,21 @@
+{
+  "name": "The Maryland Tile Boss",
+  "short_name": "Tile Boss",
+  "description": "Tile showroom and tile installation in Edgewater, Maryland.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3f0ea",
+  "theme_color": "#16171a",
+  "icons": [
+    {
+      "src": "/assets/img/logo-400.png",
+      "sizes": "400x400",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/logo-800.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    }
+  ]
+}

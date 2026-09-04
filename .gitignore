@@ -1,0 +1,16 @@
+node_modules/
+
+# Intermediate crawl artefacts — 33MB of raw HTML from the old site.
+# Regenerate with: python3 scripts/crawl.py
+research/raw/
+
+# Build artefacts. Both are copied from assets/optimized and assets/fonts by
+# scripts/build.mjs, so committing them would store the same images three times.
+# Regenerate both sites in a second with: npm run site
+version-a/assets/img/
+version-a/assets/fonts/
+version-b/assets/img/
+version-b/assets/fonts/
+
+.DS_Store
+*.log

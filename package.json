@@ -1,0 +1,22 @@
+{
+  "name": "maryland-tile-boss",
+  "version": "1.0.0",
+  "description": "Maryland Tile Boss website — two art directions",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/images.mjs && node scripts/build.mjs",
+    "images": "node scripts/images.mjs",
+    "site": "node scripts/build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "axe-core": "^4.13.0",
+    "lightningcss": "^1.33.0",
+    "playwright": "^1.62.1",
+    "sharp": "^0.35.4"
+  }
+}

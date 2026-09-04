@@ -1,0 +1,34 @@
+{
+ "a": [
+  {
+   "family": "Archivo",
+   "weight": "400 650",
+   "style": "normal",
+   "file": "archivo-400-650-normal.woff2",
+   "bytes": 34940
+  },
+  {
+   "family": "Archivo Black",
+   "weight": "400",
+   "style": "normal",
+   "file": "archivo-black-400-normal.woff2",
+   "bytes": 9792
+  }
+ ],
+ "b": [
+  {
+   "family": "Bodoni Moda",
+   "weight": "400 600",
+   "style": "normal",
+   "file": "bodoni-moda-400-600-normal.woff2",
+   "bytes": 46248
+  },
+  {
+   "family": "Karla",
+   "weight": "400 600",
+   "style": "normal",
+   "file": "karla-400-600-normal.woff2",
+   "bytes": 24264
+  }
+ ]
+}
