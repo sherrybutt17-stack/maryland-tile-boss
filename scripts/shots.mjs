@@ -14,6 +14,7 @@ for (const [name, port] of [['a', 8801], ['b', 8802]]) {
     page.on('requestfailed', (r) => errs.push('FAILED ' + r.url()));
     for (const p of pages) {
       await page.goto(`http://127.0.0.1:${port}${p}`, { waitUntil: 'networkidle' });
+      await page.addStyleTag({ content: 'html{scroll-behavior:auto !important}' });
       await page.evaluate(async () => {
         await new Promise((res) => {
           let y = 0;

@@ -241,7 +241,7 @@ function copyAssets(outDir, themeKey) {
   }
   const wanted =
     themeKey === 'a'
-      ? ['archivo-400-650-normal.woff2', 'archivo-black-400-normal.woff2']
+      ? ['bricolage-grotesque-400-800-normal.woff2', 'manrope-400-700-normal.woff2']
       : ['bodoni-moda-400-600-normal.woff2', 'karla-400-600-normal.woff2'];
   for (const f of fs.readdirSync('assets/fonts')) {
     if (wanted.includes(f)) fs.copyFileSync(path.join('assets/fonts', f), path.join(fontOut, f));

@@ -5,7 +5,8 @@ import { img } from '../src/content/images.js';
 
 const SRC = 'assets/images-original';
 const OUT = 'assets/optimized';
-const WIDTHS = [400, 800, 1200, 1600];
+// 600 sits between 400 and 800 so high-DPR phones stop jumping to the 800px file.
+const WIDTHS = [400, 600, 800, 1200, 1600];
 // Brand marks render between 44px and 120px, so full-size variants are pure waste.
 const SMALL_WIDTHS = [64, 128, 256, 400];
 const SMALL_KEYS = new Set(['logo', 'logoWide', 'crab', 'digitileMark']);

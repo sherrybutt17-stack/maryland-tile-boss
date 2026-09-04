@@ -1,18 +1,18 @@
 {
  "a": [
   {
-   "family": "Archivo",
-   "weight": "400 650",
+   "family": "Bricolage Grotesque",
+   "weight": "400 800",
    "style": "normal",
-   "file": "archivo-400-650-normal.woff2",
-   "bytes": 34940
+   "file": "bricolage-grotesque-400-800-normal.woff2",
+   "bytes": 76868
   },
   {
-   "family": "Archivo Black",
-   "weight": "400",
+   "family": "Manrope",
+   "weight": "400 700",
    "style": "normal",
-   "file": "archivo-black-400-normal.woff2",
-   "bytes": 9792
+   "file": "manrope-400-700-normal.woff2",
+   "bytes": 24576
   }
  ],
  "b": [

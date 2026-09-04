@@ -6,12 +6,14 @@ import path from 'path';
 const UA_MODERN =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
 
-// Theme A: Archivo superfamily — grotesque with a signage-weight display cut.
+// Theme A: Bricolage Grotesque display + Manrope body.
 // Theme B: Bodoni Moda for high-contrast editorial display, Karla for quiet UI/body.
 const FAMILIES = [
   // Variable ranges so each family ships as a single file instead of one per weight.
-  { css: 'Archivo:wght@400..650', dir: 'a' },
-  { css: 'Archivo+Black', dir: 'a' },
+  // Theme A: Bricolage Grotesque is a contemporary display grotesque with real character;
+  // Manrope carries body copy without competing with it.
+  { css: 'Bricolage+Grotesque:opsz,wght@12..96,400..800', dir: 'a' },
+  { css: 'Manrope:wght@400..700', dir: 'a' },
   { css: 'Bodoni+Moda:opsz,wght@6..96,400..600', dir: 'b' },
   { css: 'Karla:wght@400..600', dir: 'b' },
 ];
